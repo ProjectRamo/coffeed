@@ -14,4 +14,5 @@ from dj_static import Cling
 
 application = Cling(get_wsgi_application())
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "coffeed.settings")
+os.environ['DJANGO_SETTINGS_MODULE'] = 'coffeed.settings'
 """application = get_wsgi_application()"""
